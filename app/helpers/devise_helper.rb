@@ -9,7 +9,6 @@ module DeviseHelper
 
     html = <<-HTML
     <div data-alert class="alert-box alert">
-      <!-- <h2>#{sentence}</h2> -->
       <ul>#{messages}</ul>
     </div>
     HTML

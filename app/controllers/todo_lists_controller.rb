@@ -28,7 +28,6 @@ class TodoListsController < ApplicationController
   end
 
   def destroy
-    # render plain: params
     @todo_list.destroy
     redirect_to todo_lists_path
   end
