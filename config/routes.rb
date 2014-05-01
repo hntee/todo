@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'todo_list/new'
 
   # get 'todo_list/create'

@@ -1,7 +1,6 @@
 <%= form_for(@todo_list) do |f| %>
   <% if @todo_list.errors.any? %>
-    <div data-alert class="alert-box warning">
-      
+    <div data-alert class="alert-box warning">     
       <%= @todo_list.errors.full_messages.first %>
       <a href="#" class="close">&times;</a>
     </div>

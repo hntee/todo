@@ -28,3 +28,35 @@ input[type="checkbox"] {
 	position: relative;
 	top: 2px;
 }
+
+
+.user-nav {
+	float: right;
+
+	position: relative;
+	top: 15px;
+
+	a {
+		display: inline-block;
+		padding: 0 10px;
+
+	}
+
+	.user-email {
+		color: #c9c9c9;
+	}
+
+}
+
+.alert-box p {
+	margin-bottom: 0;
+	color: #fff;
+}
+
+
+.alert-box ul {
+	margin: 0;
+	
+	list-style: none;
+	
+}
