@@ -2,11 +2,7 @@
   <span class="user-email">
     <%= current_user.email %>
   </span>
-  <% if current_user %>
-    <%= link_to "退出登录", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign in", new_user_session_path %>
-  <% end %>
+  <%= link_to "退出登录", destroy_user_session_path, method: :delete %>
 </div>
 
 <h2>待办事项</h2>
@@ -14,19 +10,17 @@
 <%= link_to "添加任务", new_todo_list_path, class: "button radius", id: "add-todo"%>
 
 <%= div_for(@todo_lists) do |todo| %>
-
   <%= form_for(todo) do |f| %>
-  
-  <%= f.check_box :completed %>
-  <span class="todo-content <%= "#{"completed" if todo.completed}" %>"> 
-    <%= todo.content %>
-  </span>
- 
-  <%= f.submit "保存", class: "button med" %>
-  
-  <%= link_to '删除', todo, method: :delete,class: "button med alert" %>
+    <%= f.check_box :completed %>
 
-  <% end %>
-<% end %>
+    <span class="todo-content <%= "#{"completed" if todo.completed}" %>"> 
+      <%= todo.content -%>
+      <%# truncate(todo.content,length: 25) %>
+    </span>
+   
+    <%= f.submit "保存", class: "button med" %>
+    <%= link_to '删除', todo, method: :delete,class: "button med alert" %>
+  <% end %> <!-- form_for -->
+<% end %> <!-- div_for -->
 
 

@@ -39,7 +39,6 @@ input[type="checkbox"] {
 	a {
 		display: inline-block;
 		padding: 0 10px;
-
 	}
 
 	.user-email {
@@ -48,15 +47,15 @@ input[type="checkbox"] {
 
 }
 
-.alert-box p {
-	margin-bottom: 0;
-	color: #fff;
+.alert-box {
+	p {
+		margin-bottom: 0;
+		color: #fff;
+	}
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
 }
 
-
-.alert-box ul {
-	margin: 0;
-	
-	list-style: none;
-	
-}
