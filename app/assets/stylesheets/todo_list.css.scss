@@ -1,0 +1,30 @@
+// Place all the styles related to the todo_list controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.todo-content {
+	display: inline-block;
+	width: 400px;
+	padding-left: 2px;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: #c3c3c3;
+}
+
+h2 {
+	margin: 10px 0;
+}
+
+#add-todo {
+	background-color: #95c;
+	&:hover {
+		background-color: #c6c;
+	}
+}
+
+input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
